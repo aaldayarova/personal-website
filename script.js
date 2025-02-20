@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             starred.forEach(repo => {
                 const listItem = document.createElement("li");
-                listItem.innerHTML = `<strong>${repo.name}</strong created on ${new Date(repo.created_at).toLocaleDateString()} - ${repo.description || ""}`;
+                listItem.innerHTML = `<strong>${repo.name}</strong> created on ${new Date(repo.created_at).toLocaleDateString()} - ${repo.description || ""}`;
                 repoList.appendChild(listItem);
             });
         })
