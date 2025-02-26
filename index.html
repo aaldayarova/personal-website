@@ -13,10 +13,10 @@
     <title>Aika Aldayarova</title>
     <style>
         header { /*Header at the very top*/
-            justify-items: center;
+            justify-items: left;
             font-family: Geneva, Verdana, sans-serif;
             margin: 10px;
-            margin-top: 5%;    
+            margin-top: 5%;  
         }
         * { /*All content*/
             color: black;
@@ -96,26 +96,30 @@
         .last-text {
             margin-bottom: 50px;
         }
+        .container-text-center {
+            align-content: center;
+            text-align: center;
+        }
     </style>
   </head>
   <body>
-    <header>
-        <h1>Aika Aldayarova</h1>
+    <header class="container">
+        <h2>Aika Aldayarova</h2>
     </header>
     <hr>
     <div id="content">
         <div class="container">
-            <h2 id="About"> Hi there, I'm Aika!</h2>
+            <h3 id="About">About</h3>
             <img class="profile-photo" src="./option_city.JPG" alt="Aika's profile image"/>
             I am a first year technical Master's student at Cornell University, studying Information Systems and Data Science.
             I am based out of the Cornell Tech campus in New York City. I am highly interested in using data to <u>learn</u> what happened
             and <u>predict</u> what will happen, so we can have a safer and happier world.
-            <h2 id="Contact"> Reach me </h2>
+            <h3 id="Contact"> Reach me </h3>
             aa2638 [at] cornell [dot] edu
-            <h2 id="Machine Learning & Technical Projects"> Machine Learning & Technical Projects </h2>
+            <h3 id="Machine Learning & Technical Projects"> Machine Learning & Technical Projects </h3>
             <ul id="repo-list"></ul>
             <script src="script.js"></script>
-            <h2 id="UX/UI Development"> UX/UI Development </h2>
+            <h3 id="UX/UI Development"> UX/UI Development </h3>
             <div class="gallery">
                 <!-- Project 1 -->
                 <a href="https://www.figma.com/proto/VGDJama21GvvwaLDNChDeW/Hypothetic-Duolingo-New-Product-Idea?node-id=0-1&t=i70e0s4MLWSFgNU9-1" 
@@ -139,7 +143,7 @@
                    <p>A concept for a shuttle app to improve the ride experience for the Harvard community. </p>
                </a>
             </div>
-            <h2 id="Technical Skills"> Technical Skills </h2>
+            <h3 id="Technical Skills"> Technical Skills </h3>
             <div class="last-text">
                 Python, SQL, Tableau, PowerBI, Machine Learning, Statistics, Data Visualization.
             </div>
@@ -147,12 +151,10 @@
     </div>
     <div id="footer" class="mb-5">
         <hr>
-        <div class="container text-center">
+        <div class="container-text-center">
+            <a href="https://github.com/ojroques/hugo-researcher" title="Inspired by Hugo and the Researcher theme by Olivier Roques"><small>Inspired by Hugo and the Researcher theme by Olivier Roques.</small></a>
+            <small> Aika Aldayarova 2025.</small>
         </div>
-            <div class="container text-center">
-                <a href="https://github.com/ojroques/hugo-researcher" title="Inspired by Hugo and the Researcher theme by Olivier Roques"><small>Inspired by Hugo and the Researcher theme by Olivier Roques.</small></a>
-                <small> Aika Aldayarova 2025.</small>
-            </div>
     </div>
 
     </div>
