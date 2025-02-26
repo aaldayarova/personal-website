@@ -3,6 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta property="og:title" content="Meet Aika Aldayarova">
+    <meta property="og:description" content="Turning raw data into actionable insights — one project at a time.">
+    <meta property="og:image" content="option_city.jpg">
+    <meta property="og:url" content="https://aaldayarova.github.io/personal-website/">
+    <meta property="og:type" content="website"> 
+    <script data-goatcounter="https://personal-website.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
     <title>Aika Aldayarova</title>
     <style>
         header { /*Header at the very top*/
@@ -26,6 +33,7 @@
             padding-left: 15px;
             margin-right: auto;
             margin-left: auto;
+            box-sizing: border-box;
         }
         .profile-photo { /*All components with class="profile-photo"; the actual photo*/
             float: right;
@@ -52,15 +60,17 @@
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
-            max-width: 1200px;
+            max-width: 100%;
             margin: auto;
         }
         .card {
             background: white;
             border-radius: 8px;
-            width: 320px;
+            width: 100%;
+            box-sizing: border-box;
+            flex-grow: 1;
             padding: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: left;
@@ -83,6 +93,9 @@
             font-size: 0.9em;
             color: #555;
         }
+        .last-text {
+            margin-bottom: 50px;
+        }
     </style>
   </head>
   <body>
@@ -95,10 +108,8 @@
             <h2 id="About"> Hi there, I'm Aika!</h2>
             <img class="profile-photo" src="./option_city.JPG" alt="Aika's profile image"/>
             I am a first year technical Master's student at Cornell University, studying Information Systems and Data Science.
-            I am based out of the Cornell Tech campus in New York City.
-            [More information to be written here.]
-            <p>
-            </p>
+            I am based out of the Cornell Tech campus in New York City. I am highly interested in using data to <u>learn</u> what happened
+            and <u>predict</u> what will happen, so we can have a safer and happier world.
             <h2 id="Contact"> Reach me </h2>
             aa2638 [at] cornell [dot] edu
             <h2 id="Machine Learning & Technical Projects"> Machine Learning & Technical Projects </h2>
@@ -129,7 +140,9 @@
                </a>
             </div>
             <h2 id="Technical Skills"> Technical Skills </h2>
-            [Include bullet of technical skills and framework knowledge].
+            <div class="last-text">
+                Python, SQL, Tableau, PowerBI, Machine Learning, Statistics, Data Visualization.
+            </div>
         </div>
     </div>
     <div id="footer" class="mb-5">
@@ -137,7 +150,7 @@
         <div class="container text-center">
         </div>
             <div class="container text-center">
-                <a href="https://github.com/ojroques/hugo-researcher" title="Inspired by Huge and the Researcher theme by Olivier Roques"><small>Inspired by Huge and the Researcher theme by Olivier Roques.</small></a>
+                <a href="https://github.com/ojroques/hugo-researcher" title="Inspired by Hugo and the Researcher theme by Olivier Roques"><small>Inspired by Hugo and the Researcher theme by Olivier Roques.</small></a>
                 <small> Aika Aldayarova 2025.</small>
             </div>
     </div>
