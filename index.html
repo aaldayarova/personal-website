@@ -50,6 +50,39 @@
         .repo-date {
             color: #666;
         }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            width: 320px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            text-decoration: none;
+        }
+        .card:hover {
+            box-shadow: 0 6px 12px rgba(37, 150, 190, 0.25);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+            height: 180px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .card p {
+            font-size: 0.9em;
+            color: #555;
+        }
     </style>
   </head>
   <body>
@@ -72,7 +105,29 @@
             <ul id="repo-list"></ul>
             <script src="script.js"></script>
             <h2 id="UX/UI Development"> UX/UI Development </h2>
-            [Include 3-4 Figma projects related to product design].
+            <div class="gallery">
+                <!-- Project 1 -->
+                <a href="https://www.figma.com/proto/VGDJama21GvvwaLDNChDeW/Hypothetic-Duolingo-New-Product-Idea?node-id=0-1&t=i70e0s4MLWSFgNU9-1" 
+                target="_blank" class="card">
+                    <img src="Explore Page.png" alt="Hypothetic Duolingo New Product Idea">
+                    <h3>Duolingo Events</h3>
+                    <p>A concept for a new, hypothetical product, Duolingo Events, allowing users to practice languages together.</p>
+                </a>
+                <!-- Project 2 -->
+                 <a href="https://www.figma.com/proto/DPc4hcJ5xFMOMgRGqaSvTb/CS79-Babble-Hi-Fi-Prototype-(Copy)?node-id=29-107&t=vYoWz55E1yMu2qyB-1"
+                 target="_blank" class="card">
+                    <img src="Babble Landing.jpg" alt="Social Media App Babble for New Parents">
+                    <h3>Babble</h3>
+                    <p>A concept for a social media app made for new parents to build a support system and receive/share advice. </p>
+                </a>
+                <!-- Project 3 -->
+                <a href="https://www.figma.com/proto/EMbaanm47cVs0pq3UZSCcp/CS79-GuideMe-Prototype-(Copy)?node-id=0-1&t=uKygc9Ygy6VnJzAI-1"
+                target="_blank" class="card">
+                   <img src="GuideMe Landing.png" alt="Redesigned Shuttle App for Harvard Students">
+                   <h3>GuideMe</h3>
+                   <p>A concept for a shuttle app to improve the ride experience for the Harvard community. </p>
+               </a>
+            </div>
             <h2 id="Technical Skills"> Technical Skills </h2>
             [Include bullet of technical skills and framework knowledge].
         </div>
